@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppXamarin001.CrudJugadores">
+    <StackLayout>
+        <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
+        <Label x:Name="lblTexto" Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>
+
+        <Entry x:Name="txtCedula" Placeholder="Cedula" ></Entry>
+        <Entry x:Name="txtNombre" Placeholder="Nombre jugador" ></Entry>
+        <Entry x:Name="txtDomicilio" Placeholder="Domicilio" ></Entry>
+        <Entry x:Name="txtTelefono" Placeholder="Teléfono" ></Entry>
+        <Entry x:Name="txtEdad" Placeholder="Edad" ></Entry>
+
+        <Button Text="Insertar"  Clicked="cmdInsert_Clicked" ></Button>
+        <Button Text="Modificar" Clicked="cmdUpdate_Clicked"></Button>
+        <Button Text="Leer" Clicked="cmdReadOne_Clicked"></Button>
+        <Button Text="Eliminar" Clicked="cmdDelete_Clicked"></Button>
+
+        <Button x:Name="cmdRegesar" Text="REGRESAR" Clicked="cmdRegesar_Clicked"></Button>
+    </StackLayout>
+</ContentPage>
